@@ -1,2 +1,4 @@
+zombie
 objs
 *.o
+*.sw*
