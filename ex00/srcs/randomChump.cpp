@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: motoko <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/15 16:36:03 by motoko            #+#    #+#             */
-/*   Updated: 2024/01/15 16:44:53 by motoko           ###   ########.fr       */
+/*   Created: 2024/01/15 17:11:00 by motoko            #+#    #+#             */
+/*   Updated: 2024/01/15 18:21:59 by motoko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.hpp"
+#include "Zombie.hpp"
 
-int	main(void)
+void	randomChump(std::string name)
 {
-	std::cout << "toto" << std::endl;
+	Zombie	z1(name);		
 }

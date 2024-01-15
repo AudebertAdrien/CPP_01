@@ -6,7 +6,7 @@
 #    By: motoko <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/02 14:26:47 by motoko            #+#    #+#              #
-#    Updated: 2024/01/15 16:47:12 by motoko           ###   ########.fr        #
+#    Updated: 2024/01/15 17:30:43 by motoko           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,9 +19,9 @@ INCLUDES_DIR	:= includes
 VPATH			:= $(SRCS_DIR):
 
 SRCS			:= main.cpp				\
-				   #Zombie.cpp			\
-				   #newZombie.cpp		\	
-				   #randomChump.cpp		\
+				   Zombie.cpp			\
+				   randomChump.cpp		\
+				   newZombie.cpp		
 
 CC				:= g++
 CFLAGS`			:= -g -Wall -Werror -Wextra 

@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.hpp                                           :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: motoko <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/15 16:45:09 by motoko            #+#    #+#             */
-/*   Updated: 2024/01/15 16:46:11 by motoko           ###   ########.fr       */
+/*   Created: 2024/01/15 17:29:18 by motoko            #+#    #+#             */
+/*   Updated: 2024/01/15 18:22:24 by motoko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_HPP
-# define MAIN_HPP
+#include "Zombie.hpp"
 
-#include <iostream>
-#include <string>
-#include <iomanip>
-
-#endif
+Zombie *newZombie(std::string name)
+{
+	return (new Zombie(name));
+}
