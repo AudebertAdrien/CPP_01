@@ -6,11 +6,11 @@
 #    By: motoko <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/02 14:26:47 by motoko            #+#    #+#              #
-#    Updated: 2024/01/15 17:30:43 by motoko           ###   ########.fr        #
+#    Updated: 2024/01/16 14:36:59 by motoko           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			:= zombie 
+NAME			:= BraiiiiiiinnnzzzZ 
 
 SRCS_DIR		:= srcs
 OBJS_DIR		:= objs

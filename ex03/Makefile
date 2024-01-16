@@ -6,12 +6,11 @@
 #    By: motoko <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/02 14:26:47 by motoko            #+#    #+#              #
-#    Updated: 2024/01/16 14:37:08 by motoko           ###   ########.fr        #
+#    Updated: 2024/01/16 19:14:01 by motoko           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			:= Moar_brainz! 
-
+NAME			:= Unnecessary_violence
 SRCS_DIR		:= srcs
 OBJS_DIR		:= objs
 INCLUDES_DIR	:= includes
@@ -19,8 +18,9 @@ INCLUDES_DIR	:= includes
 VPATH			:= $(SRCS_DIR):
 
 SRCS			:= main.cpp				\
-				   Zombie.cpp			\
-				   zombieHorde.cpp
+				   Weapon.cpp			\
+				   HumanA.cpp			\
+				   HumanB.cpp
 
 CC				:= g++
 CFLAGS`			:= -g -Wall -Werror -Wextra 
