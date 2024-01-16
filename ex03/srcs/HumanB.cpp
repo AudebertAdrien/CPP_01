@@ -6,7 +6,7 @@
 /*   By: motoko <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 15:46:49 by motoko            #+#    #+#             */
-/*   Updated: 2024/01/16 19:31:45 by motoko           ###   ########.fr       */
+/*   Updated: 2024/01/16 19:35:13 by motoko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "Weapon.hpp"
 #include "HumanB.hpp"
 
-HumanB::HumanB() : _weapon() {
+HumanB::HumanB() : _name(), _weapon() {
 	std::cout << "HumanA Constructor" << std::endl;
 }
 
