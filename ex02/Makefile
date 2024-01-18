@@ -6,11 +6,11 @@
 #    By: motoko <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/02 14:26:47 by motoko            #+#    #+#              #
-#    Updated: 2024/01/16 14:35:51 by motoko           ###   ########.fr        #
+#    Updated: 2024/01/18 17:00:18 by motoko           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			:= HI_THIS_IS_BRAIN; 
+NAME			:= HI_THIS_IS_BRAIN
 
 SRCS_DIR		:= srcs
 OBJS_DIR		:= objs
