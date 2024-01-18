@@ -5,41 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: motoko <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/17 14:41:18 by motoko            #+#    #+#             */
-/*   Updated: 2024/01/17 16:34:42 by motoko           ###   ########.fr       */
+/*   Created: 2024/01/17 16:30:43 by motoko            #+#    #+#             */
+/*   Updated: 2024/01/18 14:46:04 by motoko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <fstream>
+#include "Harl.hpp"
 
-int	main(int argc, char **argv)
+int	main(void)
 {
-	if (argc == 4)
-	{
-		std::string const filename("./filename");
-		std::string const filename_replace("./filename.replace");
-		std::ifstream ifs;
-		std::ofstream ofs;
-		std::string line;
+	Harl h1;
 
-		ifs.open(filename.c_str());
-		ofs.open(filename_replace.c_str());
-		if (!ifs || !ofs)
-		{
-			std::cerr << "Unable to open file." << std::endl;
-			return (1);
-		}
-		while (ifs >> line)
-		{
-			if (line == argv[2])
-				ofs << argv[3] << " ";
-			else
-				ofs << line << " ";
-		}
-		ofs << '\n';
-		ifs.close();
-		ofs.close();
-	}
+	h1.complain("DEBUG");
+	h1.complain("INFO");
+	h1.complain("WARNING");
+	h1.complain("ERROR");
 	return (0);
 }
