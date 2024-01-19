@@ -6,7 +6,7 @@
 #    By: motoko <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/02 14:26:47 by motoko            #+#    #+#              #
-#    Updated: 2024/01/17 14:42:35 by motoko           ###   ########.fr        #
+#    Updated: 2024/01/19 16:34:36 by motoko           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ INCLUDES_DIR	:= includes
 VPATH			:= $(SRCS_DIR):
 
 SRCS			:= main.cpp				\
+				   replace.cpp
 
 CC				:= g++
 CFLAGS`			:= -g -Wall -Werror -Wextra 
@@ -49,6 +50,7 @@ clean:
 
 fclean: clean
 	$(RM) $(NAME)
+	$(RM) *.replace
 
 re: fclean all
 

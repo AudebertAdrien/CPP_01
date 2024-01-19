@@ -6,40 +6,46 @@
 /*   By: motoko <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 14:41:18 by motoko            #+#    #+#             */
-/*   Updated: 2024/01/17 16:34:42 by motoko           ###   ########.fr       */
+/*   Updated: 2024/01/19 16:26:16 by motoko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <fstream>
+#include <replace.hpp>
 
 int	main(int argc, char **argv)
 {
-	if (argc == 4)
-	{
-		std::string const filename("./filename");
-		std::string const filename_replace("./filename.replace");
-		std::ifstream ifs;
-		std::ofstream ofs;
-		std::string line;
+	Replace obj;
 
-		ifs.open(filename.c_str());
-		ofs.open(filename_replace.c_str());
-		if (!ifs || !ofs)
-		{
-			std::cerr << "Unable to open file." << std::endl;
-			return (1);
-		}
-		while (ifs >> line)
-		{
-			if (line == argv[2])
-				ofs << argv[3] << " ";
-			else
-				ofs << line << " ";
-		}
-		ofs << '\n';
-		ifs.close();
-		ofs.close();
+	if (argc != 4)
+	{
+		std::cerr << "Error: Incorrect number of arguments" << std::endl;
+		return (1);
 	}
+
+	std::ifstream ifs(argv[1]);
+	if (!ifs.is_open())
+	{
+		std::cerr << "Error: Unable to open input file" << std::endl;
+		return (1);
+	}
+	std::string result;
+	std::string s1 = argv[2];
+	std::string s2 = argv[3];
+
+	std::getline(ifs, result, '\0');
+	ifs.close();
+
+	result = obj.ft_replace(result, s1, s2);
+	
+	std::string outputFilename = std::string(argv[1]) + ".replace";
+	std::ofstream ofs(outputFilename.c_str());
+	if (!ofs.is_open())
+	{
+		std::cerr << "Error: Unable to open output file" << std::endl;
+		return (1);
+	}
+	ofs << result;
+	ofs.close();
+
 	return (0);
 }
