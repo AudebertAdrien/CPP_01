@@ -6,7 +6,7 @@
 /*   By: motoko <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 17:03:45 by motoko            #+#    #+#             */
-/*   Updated: 2024/01/18 16:23:40 by motoko           ###   ########.fr       */
+/*   Updated: 2024/01/19 16:53:41 by motoko           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,13 @@ Harl::Harl() {
 
 int		level_to_nb(std::string level)
 {
-	if(level == "DEBUG")
-		return (0);
-	if(level == "INFO")
-		return (1);
-	if(level == "WARNING")
-		return (2);
-	if(level == "ERROR")
-		return (3);
+	const char* levelString[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+
+	for (int i = 0; i < 4; i++)
+	{
+		if (levelString[i] == level)
+			return (i);	
+	}
 	return (-1);
 }
 
